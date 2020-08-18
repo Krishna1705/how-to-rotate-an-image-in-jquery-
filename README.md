@@ -1,5 +1,5 @@
 # how-to-rotate-an-image-in-jquery-
-Rotate an Image  in JQUERY using jQueryRotate Plugin, which is available on web to apply rotate animation on image in very less code.
+
 There is Plugin called JQueryRotate is available on web,so that we don't need to do too much code to apply rotate animation on image using JQuey.
 we can rotate image it with less code.you just need to download this plugin and need to add this jQueryRotate.js file into your project.
 and you can apply rotate animation using its method.
