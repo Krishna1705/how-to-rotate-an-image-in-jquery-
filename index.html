@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>How to rotate image in jqery</title>
+    </head>
+<body>
+<!-- Image rotating by default -->
+<div style="width:50%; margin:0 auto; text-align:center">
+    <h3>Image rotating by default</h3>
+   
+    <img height="100" width="100" src="images/emoji.png" class="auto-rotation">
+</div>
+<!-- End Image rotating by default -->
+
+<!-- Image rotation manually -->
+<div style="width:50%; margin:0 auto; text-align:center">
+ <h3>Image rotation manually</h3>
+ 
+ <img height="100" width="100" src="images/emoji.png" class="auto-rotation2">
+ <br/>
+ <div>
+   <button id="startbtn">Start Image Rotation</button> 
+  <button id="stopbtn">Stop Image  Rotation</button></div>
+</div>
+<!-- End Image rotation manually -->
+
+<script src="jquery.min.js"></script>
+<script src="jQueryRotate.js"></script>
+<script>
+
+$(function() { 
+
+ // Image rotating by default 
+var angle = 0;
+  setInterval(function(){
+    angle+=2;
+  $(".auto-rotation").rotate(angle);
+  },10);
+ 
+
+// Image rotation manually
+ var ang = 0;
+ $("#startbtn").click(function() {  
+
+   window.st = setInterval(function(){
+	    ang+=4;
+	  $(".auto-rotation2").rotate(ang);
+	  },10);
+ });
+
+ $("#stopbtn").click(function() {  
+   clearInterval(window.st);
+ });
+// End Example-3
+
+});
+
+</script>
+</BODY>
+</HTML>
